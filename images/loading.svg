@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width='500' height='400' role='img' view-box='0 0 100 100' xmlns="w3.org/2000/svg">
+		<path fill='white' stroke='white' stroke-width='5'
+		d = 'M200 100,
+		L200 50
+		L100 50
+		L100 150
+		H 200
+		V 250
+		H 100
+
+		M 1500 50
+		L 400 500
+		'>
+		</path>
+</svg>
