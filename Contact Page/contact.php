@@ -11,7 +11,7 @@
                 "User Email: $visitor_email.\n".
                 "User Message: $message.\n";
   
-  $to = "vidyutparvat2@gmail.com";
+  $to = "venilabots@outlook.com";
 
   $headers = "From: $email_from\r\n";
 
