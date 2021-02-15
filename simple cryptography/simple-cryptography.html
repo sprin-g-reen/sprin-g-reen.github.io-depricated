@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cyber Viable</title>
+        <link rel="stylesheet" href="../HTML_ASSETS/bootstrap-5.0.0-beta1-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../HTML_ASSETS/fontawesome-free-5.15.1-web/css/all.css">
+        <link rel="stylesheet" href="simple-cryptography.css">
+    </head>
+<body>
+    <div id='back'>
+        <a href='../index.html'>Cyber Viable</a>
+    </div>
+    <div>
+        <div class='m1'>
+        <main class='c1'>
+            <h1 data-toggle='click to toggle content' title='Click To Toggle Its Content'>Simple Cryptography <i class='fa fa-caret-down'></i></h1>
+            <article>
+                <div>
+                    <h3 id='try_crypto' data-toggle='click to toggle crypto' title='Click To Toggle Cryptography'>Use It Online Now, For Free! <i class='fa fa-caret-down'></i></h3>
+                    <div id='crypto'>
+                        <input id='key' placeholder = 'Your Key Here'/>
+                        <textarea id='text' placeholder = 'Your Text Here'></textarea>
+                        <div id='buttons'><button onclick='encode()'>Encode</button><button onclick='decode()'>Decode</button><button onclick='copy()'>Copy Result Text</button></div>
+                        <textarea id='result' placeholder='Result Will Be Shown Here'></textarea>
+                    </div>
+                </div>
+                <hr>
+                <a href='#'><img src='https://img.shields.io/badge/Current%20Status-Under--Long%20Time--Development-brightgreen'></a>
+                <h4>
+                    A simple Python module that when used, asks you to input some text that you need 
+                    to <em>ENCRYPT</em> and a <em>key</em> that is used to encrypt the text with an unique 
+                    combination of the given <em>key</em> and the text that is to be <em>encrypted</em>. Only the person 
+                    who knows the <em>ey</em> can crack the encoded text! Without that <em>key</em> no one <b>crack the</b> <em>encrypted text</em>!
+                    <br>
+                    <hr>
+                    <h3>Requirements For The Module:</h3>
+                    <ul>
+                        <li>Python 3.9 or above
+                        <li>Tkinter(module)
+                        <li>webbrowser(module)
+                    </ul>
+                    <h3>Dont have python? Install The <em>.exe</em> file!</h3>
+                    <p>If you dont have python or tkinter then you can:</p>
+                    <a href='../downloadables/Cryptography_App.zip' download><button class='btn-primary' ><i class="fas fa-file-archive"></i> Download Zip File</button></a>--OR--<a href='https://github.com/Parvat-web-dev/Simple-Cryptography/archive/v2.1.zip' download><button class='btn-dark'><i class='fas fa-download'></i> Download The Source Code.</button></a>--OR--<a href='https://github.com/Parvat-web-dev/Simple-Cryptography' target='_blank'><button class="btn-outline-dark"><i class='fab fa-github'></i>Download From Github</button></a>
+                    <hr>
+                    <h3>Don't Have Windows? You Can Use The Module! How to use the module?</h3><br>
+                    <a href='https://github.com/Parvat-web-dev/Simple-Cryptography/archive/v2.1.zip' download><button class='btn-dark'><i class='fas fa-download'></i> Download The Source Code.</button></a>
+                    <p>
+                        <script src="https://gist.github.com/Parvat-web-dev/aa41846f05c1ce20ada7602e8e7c2ed3.js"></script>
+                        Then Run The File. You Can See:
+                        <script src="https://gist.github.com/Parvat-web-dev/c6e9f0eb2b3cda875b64e5aebe5f7da3.js"></script>
+                        <p>You can see that it prints some wierd numbers which are the encoded text, encoded using your key!</p>
+                        <h3>Lets decode some text:</h3>
+                        <p>The text to be decoded is :</p>
+                        <p>'40439 24142 30964 51430 54462 37407 33238 30206 53704 30206 22626 36270 29448 54462 23005 29069 23384 33617 29069 24142 23005 59389 29827 30964 29448 54462 29069 29069 31343 35512 47640 '</p>
+                        <p>The person who had encoded this text had given me the "key" which is : 'secret'</p>
+                        In The File:
+                        <script src="https://gist.github.com/Parvat-web-dev/e8598c4b736fa484d30be03d06d415bf.js"></script>
+                        It will return:
+                        <code>'Hey, you have decoded the text!'</code>
+                        <h4>Docs:</h4>
+                        <script src="https://gist.github.com/Parvat-web-dev/1823499c33fb5df59b225d436e178e6d.js"></script>
+
+                    </p>
+
+                </h4>
+            </article>
+        </main>
+        </div>
+    </div>
+</body>
+<script src='../HTML_ASSETS/bootstrap-5.0.0-beta1-dist/js/bootstrap.js'></script>
+<script src="../HTML_ASSETS/jquery.js"></script>
+<script src='Cryptography.js'></script>
+<script src='script.js'></script>
+</html>
