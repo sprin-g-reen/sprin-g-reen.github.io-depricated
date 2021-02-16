@@ -201,7 +201,7 @@ The Navigation bar.
 	width: 100vw;
 	display: flex;
 	flex-direction: row;
-	flex-wrap: auto;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-around;
 }
@@ -284,4 +284,8 @@ The Navigation bar.
 }
 .about .contents .content .more-con li a:hover{
 	color: rgba(0,155,27);
+}
+@media only screen and (max-width: 610px)  {
+        .about {}
+
 }
