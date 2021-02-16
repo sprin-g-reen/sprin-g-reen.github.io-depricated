@@ -286,6 +286,8 @@ The Navigation bar.
 	color: rgba(0,155,27);
 }
 @media only screen and (max-width: 610px)  {
-        .about {}
+        .about .all-about-us {
+                flex-direction: column;
+}
 
 }
