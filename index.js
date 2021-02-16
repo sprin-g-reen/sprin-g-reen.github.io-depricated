@@ -1,4 +1,6 @@
-$('.load').show()
+//$('body').children().hide();
+//$('.load').hide();
+//$('.about').show();
 function checkSize() {
   var width = $(window).width();
   if (width > 600) {
@@ -62,5 +64,5 @@ $(document).ready(function() {
   }, 3000);*/
   
   HideLoader();
-  setInterval(alert('Respected User, This Page Is Currently Under Construction. So There Might Be Few Mistakes. Please Ignore Them.'), 30000);
+  //setInterval(alert('Respected User, This Page Is Currently Under Construction. So There Might Be Few Mistakes. Please Ignore Them.'), 30000);
 })
