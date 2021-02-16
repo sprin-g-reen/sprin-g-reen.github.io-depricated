@@ -188,6 +188,7 @@ The Navigation bar.
 .about {
 	display: flex;
 	flex-direction: column;
+        flex-wrap: wrap;
 	font-size: 1.3em;
 	color: white;
 	background-image: linear-gradient(45deg, rgb(21, 0, 54), rgb(0,85,50));
