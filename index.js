@@ -1,6 +1,7 @@
+var deg_rot = 1;
 //$('body').children().hide();
 //$('.load').hide();
-//$('.about').show();
+$('.more-infor').hide();
 function checkSize() {
   var width = $(window).width();
   if (width > 600) {
@@ -18,6 +19,15 @@ function CreateBlocks() {
     heAd.appendChild(blocks);
   }
 }
+$('.more-toggler').click(function(){
+  $('.more-infor').slideToggle();
+  anime({
+    targets: '.fa-caret-down',
+    rotate: 180 * deg_rot,
+    duration: 2000
+  })
+  deg_rot ++;
+})
 
 
 function HideLoader() {
