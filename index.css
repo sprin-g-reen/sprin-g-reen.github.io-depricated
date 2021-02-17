@@ -284,3 +284,15 @@ The Navigation bar.
 .about .contents .content .more-con li a:hover{
 	color: rgba(0,155,27);
 }
+.more-info {
+	align-self: flex-start;
+	justify-self: space-around;
+	margin-left: 2%;
+}
+.more-info .more-toggler {
+	position: sticky;
+	top: 0;
+	cursor: pointer;
+	z-index: 100;
+	backdrop-filter: blur(10px);
+}
