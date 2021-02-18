@@ -9,9 +9,11 @@ body {
 	background-color: black;
 }
 
-/*
-The Loading Content
+/*The Loading Content
+body
+	.load
 */
+
 .load {
 	background-color: black;
 	width: 100vw;
@@ -19,9 +21,14 @@ The Loading Content
 	position: absolute;
 	z-index: 10000001;
 }
-/*
-Head of the page
+
+/*Head of the page
+.head
+	h1
+	h6
+	.block * 100 (the block animation)
 */
+
 .head {
 	position: relative;
 	padding: 0;
@@ -63,7 +70,7 @@ Head of the page
 }
 .block {
 	position: absolute;
-	background-color: rgb(0, 255, 127, 1);
+	background-color: springgreen;
 	box-sizing: border-box;
 	width: 10vw;
 	height: 20vh;
@@ -75,10 +82,17 @@ Head of the page
 		font-size: 3rem;
 	}
 }
-/*
-The Navigation bar.
 
+/*The Navigation bar.
+The class flow chart
+.nav-bar
+	.nav-item
+		.item1
+		.item2
+		.item3
+		.item4
 */
+
 .nav-bar {
 	position: fixed;
 	top: 0;
@@ -150,13 +164,6 @@ The Navigation bar.
 	-ms-transform: translateX(40px);
 	-o-transform: translateX(40px);
 }
-.item5:hover {
-	transform: translateX(20px);
-	-webkit-transform: translateX(20px);
-	-moz-transform: translateX(20px);
-	-ms-transform: translateX(20px);
-	-o-transform: translateX(20px);
-}
 .nav-item a {
 	color: pink;
 	font-family: 'Times New Roman', Times, serif;
@@ -177,6 +184,20 @@ The Navigation bar.
 .nav-item i:hover {
 	color: springgreen;
 }
+
+/*ABOUT US:
+The class flow chart:
+.about
+	.all-about-us
+		.contents
+			.content
+				.main-con
+				.more-con
+
+	.more-info
+		.more-about-us
+*/
+
 .about {
 	display: flex;
 	flex-direction: column;
@@ -211,13 +232,6 @@ The Navigation bar.
 	-moz-transition: transform 0.3s ease-in-out;
 	-ms-transition: transform 0.3s ease-in-out;
 	-o-transition: transform 0.3s ease-in-out;
-}
-.about .contents .content:hover{
-	transform: scale(1.2);
-	-webkit-transform: scale(1.2);
-	-moz-transform: scale(1.2);
-	-ms-transform: scale(1.2);
-	-o-transform: scale(1.2);
 }
 .about .contents .content .main-con {
 	display: flex;
@@ -295,4 +309,111 @@ The Navigation bar.
 	cursor: pointer;
 	z-index: 100;
 	backdrop-filter: blur(10px);
+}
+@media only screen and (min-width: 385px){
+	.about .contents .content:hover{
+		transform: scale(1.2);
+		-webkit-transform: scale(1.2);
+		-moz-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		-o-transform: scale(1.2);
+	}
+}
+
+/*Our Stuff
+.our-stuffs
+	.out-stuffs-text
+		ul
+			li
+				a
+*/
+
+.our-stuffs {
+	display: relative;
+	width: 100%;
+	min-height: 100vh;
+
+	background-image: linear-gradient(135deg, rgb(21, 0, 54), rgb(0,85,50));
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	color: white;
+}
+.our-stuffs .our-stuffs-text {
+	text-align: center;
+	width: 90%;
+
+	background-color: rgba(255,255,255,0.01);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	-moz-backdrop-filter: blur(10px);
+	-o-backdrop-filter: blur(10px);
+
+	border: 2px solid white;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+
+
+}
+.our-stuffs .our-stuffs-text ul{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	height: 80vh;
+}
+.our-stuffs .our-stuffs-text ul li{
+	list-style-type: circle;
+	color: white;
+	font-size: 1.7em;
+}
+.our-stuffs .our-stuffs-text ul li a{
+	color: aqua;
+}
+.our-stuffs .our-stuffs-text ul li{
+	transition: transform 0.3s ease-in-out, color 0.3s ease-in;
+	-webkit-transition: transform 0.3s ease-in-out, color 0.3s ease-in;
+	-moz-transition: transform 0.3s ease-in-out, color 0.3s ease-in;
+	-ms-transition: transform 0.3s ease-in-out, color 0.3s ease-in;
+	-o-transition: transform 0.3s ease-in-out, color 0.3s ease-in;
+}
+.our-stuffs .our-stuffs-text ul li:hover{
+	transform: scale(1.3);
+	-webkit-transform: scale(1.3);
+	-moz-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	-o-transform: scale(1.3);
+}
+
+/*The footer
+.foot
+	a.finger
+		i
+	a.finger
+		i
+	a.finger
+		i
+	a.finger
+		i
+	.toe
+*/
+.foot {
+	display: flex;
+	width: 100vw;
+	height: 50px;
+	align-items: center;
+	justify-content: space-around;
+}
+.foot .something{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	font-size: 1.5em;
+	width: 150px;
 }
