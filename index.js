@@ -2,6 +2,52 @@ var deg_rot = 1;
 //$('body').children().hide();
 //$('.load').hide();
 $('.more-infor').hide();
+function LoadingConfig(){
+  var win_height = $(window).height();
+  var win_width = $(window).width();
+  $(window).resize(function(){
+    win_height = $(window).height();
+    win_width = $(window).width();
+  })
+  function createBlocks(){
+    var lc = document.querySelector('.loading_container');
+    for (var i = 0; i < 100; i++){
+      var block = document.createElement('div')
+      block.classList.add('lblock');
+      block.innerHTML = 'LOADING';
+      lc.appendChild(block);
+    }
+  }
+  createBlocks();
+  function animation(){
+    anime({
+      targets: '.lblock',
+      skewY: [0, 360],
+      skewX: [0, 360],
+      duration: 3000,
+      translateX: function(){
+        return anime.random(-(win_width/2), (win_width/2))
+      },
+    translateY: function(){
+      return anime.random(-(win_height/2), (win_height/2))
+    },
+    delay: anime.stagger(0),
+    complete: animation
+    })
+  }
+  animation();
+  setTimeout(function(){
+    anime({
+      targets: '.loading_container',
+      scale: [1, 0],
+      duration: 1000,
+      complete: function(){
+        $('.loading_container').remove();
+      }
+    })
+  }, 6000)
+}
+LoadingConfig();
 function checkSize() {
   var width = $(window).width();
   if (width > 600) {
@@ -29,16 +75,6 @@ $('.more-toggler').click(function(){
   deg_rot ++;
 })
 
-
-function HideLoader() {
-  anime({
-    targets: '.load',
-    rotateZ: 580,
-    scale: 0,
-    duration: 3000,
-  })
-}
-
 function AnimateBlocks() {
   var browserWidth = $(window).width()/2;
   var browserHeight = $(window).height()/2;
@@ -54,25 +90,11 @@ function AnimateBlocks() {
   )
 }
 
-
 $(document).ready(function() {
-  
-  
-  //The hiding and showing of the nav
   checkSize();
   $(window).on('input', function() {
     checkSize();
   })
-  
-  //Start The Animation OF The Head!
   AnimateBlocks();
   CreateBlocks();
-  //the loading content hider
-  /*setTimeout(function(){
-    $('body').children().show(200);
-    $('.load').hide(100);
-  }, 3000);*/
-  
-  HideLoader();
-  //setInterval(alert('Respected User, This Page Is Currently Under Construction. So There Might Be Few Mistakes. Please Ignore Them.'), 30000);
 })
