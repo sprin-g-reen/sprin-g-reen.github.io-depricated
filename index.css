@@ -176,11 +176,18 @@ The class flow chart
 	-o-transform: translateX(0px);
 }
 .item4:hover {
-	transform: translateX(40px);
-	-webkit-transform: translateX(40px);
-	-moz-transform: translateX(40px);
-	-ms-transform: translateX(40px);
-	-o-transform: translateX(40px);
+	transform: translateX(30px);
+	-webkit-transform: translateX(30px);
+	-moz-transform: translateX(30px);
+	-ms-transform: translateX(30px);
+	-o-transform: translateX(30px);
+}
+.item5:hover {
+	transform: translateX(0px);
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	-o-transform: translateX(0px);
 }
 .nav-item a {
 	color: pink;
