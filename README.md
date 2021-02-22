@@ -1,4 +1,4 @@
 # SPRINGREEN
 We Are The SPRINGREEN
 
-## Our Website: [https://sprin-g-reen.github.io/home/](https://sprin-g-reen.github.io/home/)
+## Our Website: [https://sprin-g-reen.github.io/](https://sprin-g-reen.github.io/)
