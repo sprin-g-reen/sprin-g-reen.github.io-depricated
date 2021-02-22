@@ -1,6 +1,6 @@
 var deg_rot = 1;
-//$('body').children().hide();
-//$('.load').hide();
+$('body').children().hide();
+$('.loading_container').show();
 $('.more-infor').hide();
 function LoadingConfig(){
   var win_height = $(window).height();
@@ -43,6 +43,7 @@ function LoadingConfig(){
       duration: 1000,
       complete: function(){
         $('.loading_container').remove();
+        $('body').children().fadeToggle(500);
       }
     })
   }, 6000)
