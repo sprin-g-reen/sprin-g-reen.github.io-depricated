@@ -13,11 +13,12 @@
     body{
       min-width: 100vw;
       min-height: 100vh;
-      background-color: #3b3f49;
+      background-color: #1c2641;
       color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      font-family: Calibri;
+      font-size: calc(0.567vw * 0.5em);
+      overflow: hidden;
+      text-align: center;
     }
     .main-content{
       height: 50vh;
@@ -38,6 +39,9 @@
     .main-content span{
       color: red;
     }
+    a{
+      color: springgreen;
+    }
   </style>
 </head>
 <body>
@@ -46,10 +50,24 @@
   </div>
   <div>
     <h3>It seems that you have crossed the limits of our universe.</h3>
-    <h3><a href='https://sprin-g-reen.github.io/'>Click</a> to come back to the hub of our universe.</h3>
+    <h3><a href='https://sprin-g-reen.github.io/'>Come</a> back to our univers' center.</h3>
   </div>
 </body>
-<script src="HTML_ASSETS/anime.js"></script>
+<script src="HTML_ASSETS/gsap.min.js"></script>
+<script src="HTML_ASSETS/jquery.js"></script>
 <script>
-</script>
+  document.addEventListener('mousemove', e => {
+    gsap.to('.main-content', {
+      skewY: ($(window).height() - e.clientX) /90,
+      skewX: ($(window).width() - e.clientY) / 90,
+    })
+  })
+  document.addEventListener('mouseout', e => {
+    gsap.to('.main-content', {
+        skewX: 0,
+        skewY: 0
+      }
+    )
+  })
+  </script>
 </html>
