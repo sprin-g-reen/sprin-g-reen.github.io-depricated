@@ -5,7 +5,7 @@
 <hr>
 
 ### CONTENTS:
-  - [Cryptography Bot](#cb)
+  - [Cryptography Bot](#cryptography-bot)
   - []()
   - []()
   - []()
