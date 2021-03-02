@@ -13,7 +13,7 @@
 
 
 <hr>
-<div id='cb'>
+
   
 ### Cryptography Bot
 ###### A product of [SIMPLE CRYPTOGRAPHY](https://github.com/Parvat-web-dev/Simple-Cryptography)
@@ -60,77 +60,3 @@ Using the bot:
 For simple-cryptography's online use see: [https://sprin-g-reen.github.io/simple%20cryptography/](https://sprin-g-reen.github.io/simple%20cryptography)
 
 
-</div>
-<hr>
-<div id=''>
-
-
-
-</div>
-<hr>
-<div id=''>
-
-
-
-</div>
-<hr>
-<div id=''>
-
-
-
-</div>
-<hr>
-<div id=''>
-
-
-
-</div>
-<hr>
-<div id=''>
-
-
-
-</div>
-<hr>
-<div id=''>
-
-
-
-</div>
-
-<hr>
-<div id=''>
-
-
-
-</div>
-<hr>
-<div id=''>
-
-
-
-</div>
-<hr>
-<div id=''>
-
-
-
-</div>
-<hr>
-<div id=''>
-
-
-
-</div>
-<hr>
-<div id=''>
-
-
-
-</div>
-<hr>
-<div id=''>
-
-
-
-</div>
