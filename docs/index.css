@@ -1,8 +1,23 @@
+
+@font-face 
+{
+  font-family: DejaVuSansMono;
+  src: url(../HTML_ASSETS/text_fonts/dejavusansmono_book_macroman/DejaVuSansMono-webfont.woff)
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: DejaVuSansMono;
+}
+body{
+  color: black;
+  font-size: 1.2em;
+  background-color:white;
+}
+a
+{
+  color: rgb(0, 156, 78);
 }
 
 /*The headder
@@ -25,7 +40,7 @@
   width: 30vw;
   font-size: 5em;
   text-align: center;
-  color: orange;
+  color: springgreen;
 }
 .head h1{
   align-self: left;
@@ -49,4 +64,56 @@
 .head h6 a {
   color: springgreen;
   font-size: 1.4em;
+}
+/*
+Default:
+.content
+  main .cb
+    header
+      article
+        a
+Seperate:
+.content
+  .cb
+  .pcb
+  .pb
+  .pf
+  .sb
+  .si
+  .sc
+  .wb
+  .yb
+*/
+.content
+{ 
+  display: flex;
+  align-items: left;
+  justify-content: space-around;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 90%;
+  margin: auto;
+  padding: 2%;
+  color: white;
+  background-color: black;
+  border-left: 2px solid black;
+  overflow: visible;
+}
+.content main
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100px;
+  min-width: 200px;
+  width: 90%;
+  padding: 4%;
+}
+.cotent main header{
+  position: relative;
+  font-size: 1.63em;
+  text-align: center;
+}
+.content main article{
 }
