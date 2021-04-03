@@ -5,11 +5,11 @@
 <hr>
 
 ### CONTENTS:
-  - [Cryptography Bot](#cryptography-bot)
+  - [Cryptography Bot V1](#cryptography-bot)
+  - [Cryptography Bot V2](#cryptography-bot-V2)
+  - [Poll Bot](#poll-bot)
   - []()
-  - []()
-  - []()
-  - []()
+  - [More Info](#For-more-informations-visit:)
 
 
 <hr>
@@ -60,3 +60,83 @@ Using the bot:
 For simple-cryptography's online use see: [https://sprin-g-reen.github.io/simple%20cryptography/](https://sprin-g-reen.github.io/simple%20cryptography)
 
 
+<hr>
+
+
+### Cryptography Bot V2
+##### The next version of [Cryptography V1 Bot](https://telegram.me/simple-cryptography) with a new [Inline Feature]()
+
+Inline Usage:
+  - Just Type `@scrptogbot` then your `key` and the `text` with `#` in between to seperate the _key_ and _text_
+    - The text area will be: `@scrptogbot Key # Text`
+    - The first look of [Cryptography V2 Bot](https://telegram.me/scrptogbot):
+
+
+      <li> <img src="../images/simple-cryptography-first-look.png"></img></li>
+    
+
+### Poll Bot
+##### A simple poll bot that can create simple polls in groups and channels.
+
+Commands:
+  - /help
+  - /alive
+  - /poll
+
+Functions:
+  - /help:
+    See the Help Text
+  - /alive:
+    Check if the bot is running or not
+  - /poll:
+    Create polls.
+  - How To Create Polls:
+    - Use:
+    - `/poll | Your Question | Option1, Option2, Option3, more_option | **kwargs`
+
+You can add As may options as you want. (minimum 1)<br>
+What is `**kwargs?`<br>
+**kwargs are the optional commands, that you can pass when necessary!
+Those are:
+  - `multi_answer = True/False`
+    - This enables or disables The multiple answer mode. By   default It is False.
+      - example:
+            `/poll | This is my question | Ans1, Ans2 | multi_answer = True | op = seconds`<br>
+        This tells how many seconds will the poll will last.
+        It might be 'op' or 'open_period'
+        - example:
+            `/poll | This is my question | Ans1, Ans2 | op = 60`<br>
+            Now thw poll will last for 60 seconds.
+  - `dn = True/False`
+    - This tells that showld the poll be notidied in the notifications of the group members. By Default it is True. It might be 'dn' or 'disable_notification'.
+      - example:
+            `/poll | This is my question | Ans1, Ans2 | dn = False`
+
+Did you know, you can use multiple optional commands or dont use it:
+Example:
+  - `/poll | Hi there | Hello, Good bye`
+  - `/poll | This will close in 10s | Nice, Bad | op = 10`
+  - `/poll | Hello | Hi, Bye, Hi dev, Bye human | ma = True open_period = 50`
+
+Note:
+  - Use comma(**`','`**) to split the _options_.
+  - Every part is split by `'|'`.
+  - To use ',' in option use: `'<.>'`
+
+
+
+### For more informations visit:
+  - Official Site:
+    - https://sprin-g-reen.github.io/
+
+  Telegram:
+  - [SPRINGREEN BOTS](https://telegram.me/venilabots)
+  - [SPRINGREEN DISCUSSION](https://telegram.me/venilabots)
+  
+  Credits:
+  - [@Parvat_R](https://telegram.me/Parvat_R)
+  - [@Rohithaditya](https://telegram.me/Rohithaditya)
+
+Created with:
+  - [python](https://python.org/)
+  - [pyTelegramBotAPI](https://pypi.org/project/pyTelegramBotAPI/)
