@@ -1,8 +1,0 @@
-{
-  "called": true,
-  "working": true,
-  "from" : {
-    "_" : "Twilio",
-    "website": "https://twilio.com"
-  }
-}

@@ -21,23 +21,25 @@ body
   height: 100vh;
   min-width: 100vw;
   min-height: 100vh;
-  max-width: 100vw;
-  max-height: 100vh;
+  max-width: 0vw;
+  max-height: 0vh;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 	position: absolute;
 	z-index: 100001;
+	display: none;
 }
 .lblock {
-  position: absolute;
-  background-color: rgba(255,255,255,0.5);
+	position: absolute;
+  background-color: rgba(217, 223, 223, 0.5);
   min-width: 100px;
   min-height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+	transform: translate(50%, 50%);
 }
 
 /*Head of the page
@@ -48,7 +50,8 @@ body
 */
 
 .head {
-	position: relative;
+	position: sticky;
+	top: 0;
 	padding: 0;
 	margin: 0;
 	display: flex;
@@ -63,8 +66,12 @@ body
 	overflow: hidden;
 	color: white;
 	z-index: -1001;
+	/* display: none; */
 }
 .head h1 {
+	-webkit-box-reflect: below -48px linear-gradient(180deg, transparent, rgba(0,0,0,0.07), white);
+	-moz-box-reflect: below -48px linear-gradient(180deg, transparent, rgba(0,0,0,0.07), white);
+	-o-box-reflect: below -48px linear-gradient(180deg, transparent, rgba(0,0,0,0.07), white);
 	padding: 0;
 	margin: 0;
 	z-index: 10000;
@@ -210,211 +217,176 @@ The class flow chart
 	color: springgreen;
 }
 
-/*ABOUT US:
-The class flow chart:
+/* About Us */
 .about
-	.all-about-us
-		.contents
-			.content
-				.main-con
-				.more-con
-
-	.more-info
-		.more-about-us
-*/
-
-.about {
+{
+	background-image: linear-gradient(transparent, black, black, black, black, black, black, black, black, transparent);
+	/* background-color: black; */
+	width: 100%;
 	display: flex;
-	flex-direction: column;
-	font-size: 1.3em;
-	color: white;
-	background-image: linear-gradient(45deg, rgb(21, 0, 54), rgb(0,85,50));
-	min-height: 100vh;
-	align-items: center;
-	justify-content: center;
-}
-.about .all-about-us{
-	width: 100vw;
-	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-around;
+	padding: 10%;
 }
-.about .contents .content{
-	border: 2px solid rgba(255,255,255,0.4);
+.about .content
+{
+	border: 2px solid rgba(200,200,200,0.5);
 	border-radius: 20px;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	-ms-border-radius: 20px;
-	-o-border-radius: 20px;
-	width: 300px;
-	padding: 5px;
-	height: 250px;
-	overflow: hidden;
-	transition: transform 0.3s ease-in-out;
-	-webkit-transition: transform 0.3s ease-in-out;
-	-moz-transition: transform 0.3s ease-in-out;
-	-ms-transition: transform 0.3s ease-in-out;
-	-o-transition: transform 0.3s ease-in-out;
-}
-.about .contents .content .main-con {
+	background-color: black;
+	width: 250px;
+	height: 330px;
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	text-align: center;
-	width: 300px; 
-	height: 250px;
-	font-size: 2.6em;
-	z-index: 100;
-}
-.about .contents .content .main-con h2, 
-.about .contents .content .main-con li{
-	text-align: center;
-	margin-left: -10px;
-	letter-spacing: 0.1px;
-	font-size: inherit;
-}
-.about .contents .content .more-con {
-	position: absolute;
-	width: 300px;
-	height: 255px;
-	margin-left: -7px;
-	margin-top: -257px;
-	padding: 5px;
-	background-color: rgba(0,255,255, 0.2);
-	backdrop-filter: blur(10px);
-	opacity: 0;
-	transform: scale(0);
-	transition: opacity 0.3s ease-in-out, transform 0.3s linear;
-	-webkit-transition: opacity 0.3s ease-in-out, transform 0.3s linear;
-	-moz-transition: opacity 0.3s ease-in-out, transform 0.3s linear;
-	-ms-transition: opacity 0.3s ease-in-out, transform 0.3s linear;
-	-o-transition: opacity 0.3s ease-in-out, transform 0.3s linear;
-	border: 2px solid rgba(255,255,255,0.4);
-	border-radius: 20px;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	-ms-border-radius: 20px;
-	-o-border-radius: 20px;
-	z-index: 1;
-	-webkit-transform: scale(0);
-	-moz-transform: scale(0);
-	-ms-transform: scale(0);
-	-o-transform: scale(0);
-}
-.about .contents .content:hover .more-con{
-	opacity: 1;
-	transform: scale(1);
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-ms-transform: scale(1);
-	-o-transform: scale(1);
-}
-.about .contents .content .more-con li a{
-	color: springgreen;
-	transition: color 0.2s ease-out;
-	-webkit-transition: color 0.2s ease-out;
-	-moz-transition: color 0.2s ease-out;
-	-ms-transition: color 0.2s ease-out;
-	-o-transition: color 0.2s ease-out;
-}
-.about .contents .content .more-con li a:hover{
-	color: rgba(0,155,27);
-}
-.more-info {
-	align-self: flex-start;
-	justify-self: space-around;
-	margin-left: 2%;
-}
-.more-info .more-toggler {
-	position: sticky;
-	top: 0;
-	cursor: pointer;
-	z-index: 100;
-	backdrop-filter: blur(10px);
-}
-@media only screen and (min-width: 385px){
-	.about .contents .content:hover{
-		transform: scale(1.2);
-		-webkit-transform: scale(1.2);
-		-moz-transform: scale(1.2);
-		-ms-transform: scale(1.2);
-		-o-transform: scale(1.2);
-	}
-}
-
-/*Our Stuff
-.our-stuffs
-	.out-stuffs-text
-		ul
-			li
-				a
-*/
-
-.our-stuffs {
-	display: relative;
-	width: 100%;
-	min-height: 100vh;
-
-	background-image: linear-gradient(135deg, rgb(21, 0, 54), rgb(0,85,50));
-
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	color: white;
-}
-.our-stuffs .our-stuffs-text {
-	text-align: center;
-	width: 90%;
-
-	background-color: rgba(255,255,255,0.01);
-	backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px);
-	-moz-backdrop-filter: blur(10px);
-	-o-backdrop-filter: blur(10px);
-
-	border: 2px solid white;
-	border-radius: 50px;
-	-webkit-border-radius: 50px;
-	-moz-border-radius: 50px;
-	-ms-border-radius: 50px;
-	-o-border-radius: 50px;
-
-
-}
-.our-stuffs .our-stuffs-text ul{
-	text-align: center;
-	display: flex;
-	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-	height: 80vh;
+	box-shadow: 0px 0px 25px white, inset 0px 0px 7px rgba(200,200,200,0.7);
 }
-.our-stuffs .our-stuffs-text ul li{
-	list-style-type: circle;
+.about .content .card
+{
+	border: 2px solid rgba(255,255,255,0.5);
+	border-radius: 10px;
+	width: calc(100% - 20px);
+	height: 305px;
+	padding: 5px;
+	background-color: black;
 	color: white;
-	font-size: 1.7em;
+	box-shadow: 0px 0px 4px rgba(255,255,255,0.4), inset 0px 0px 5px rgba(200,200,200,0.9);
+	transition: 0.2s;
+	text-align: center;
 }
-.our-stuffs .our-stuffs-text ul li a{
-	color: aqua;
+.about .content .card ul
+{
+	text-align: left;
 }
-.our-stuffs .our-stuffs-text ul li{
-	transition: transform 0.3s ease-in-out, color 0.3s ease-in;
-	-webkit-transition: transform 0.3s ease-in-out, color 0.3s ease-in;
-	-moz-transition: transform 0.3s ease-in-out, color 0.3s ease-in;
-	-ms-transition: transform 0.3s ease-in-out, color 0.3s ease-in;
-	-o-transition: transform 0.3s ease-in-out, color 0.3s ease-in;
+.about .content:nth-child(1):hover .card
+{
+	transform: translateY(-20px);
+	box-shadow: 0px 0px 100px rgba(247, 0, 255, 0.7);
 }
-.our-stuffs .our-stuffs-text ul li:hover{
-	transform: scale(1.3);
-	-webkit-transform: scale(1.3);
-	-moz-transform: scale(1.3);
-	-ms-transform: scale(1.3);
-	-o-transform: scale(1.3);
+.about .content:nth-child(2):hover .card
+{
+	transform: translateY(-20px);
+	box-shadow: 0px 0px 100px rgba(0, 0, 255, 0.7);
+}
+.about .content:nth-child(3):hover .card
+{
+	transform: translateY(-20px);
+	box-shadow: 0px 0px 100px rgba(0,255,127,0.7);
+}
+.about .content:nth-child(1) .card h2
+{
+	color: rgb(0, 191, 255);
+	text-align: center;
+}
+.about .content:nth-child(2) .card h2
+{
+	color: rgb(255, 251, 0);
+	text-align: center;
+}
+.about .content:nth-child(3) .card h2
+{
+	background-image: linear-gradient(45deg, gold, rgb(255, 0, 255), blue, white, rgba(0,255,127));
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: rgba(0,0,0,0);
+	background-position: 0px 0px;
+	animation-name: premium;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes premium
+{
+	0%
+	{
+		background-position: 0px 0px;
+	}
+	50%
+	{
+		background-position: 150px 0px;
+	}
+	100%
+	{
+		background-position: 200px 0px;
+	}
+
+}
+.fa.fa-times-circle
+{
+	color: red;
+}
+.fa.fa-check-circle
+{
+	color: springgreen;
 }
 
+/* The portal buttons 
+Create
+ie, [NOW, FREE, $10] button*/
+
+.gnbutton
+{
+	width: 100px;
+	border: 1px solid blue;
+	border-radius: 20px;
+	text-align: center;
+	margin-left: 50px;
+	cursor: pointer;
+	background-color: transparent;
+	background-image: linear-gradient(270deg, blue 50%, springgreen 50%);
+	background-size: 200px;
+	background-repeat: no-repeat;
+	background-position: -100px 0px;
+	color: springgreen;
+	z-index: 20;
+	transition: 0.3s ease-in-out;
+}
+.gnbutton:hover
+{
+	background-position: 0px 0px;
+	color: blue;
+}
+
+/* Info */
+.info
+{
+	z-index: 30000;
+	width: 100%;
+	/* background-color: #000000; */
+	margin-top: 40vh;
+	background-image: linear-gradient(transparent, black, black, transparent);
+	/* backdrop-filter: blur(7px); */
+}
+.info ul
+{
+	width:100%;
+	/* min-width: 240px; */
+	/* padding-left: 10% */
+}
+.info ul li
+{
+	display: inline-block;
+	width: 100%;
+	background-color: #000000;
+	padding: 1% 2%;
+	transition: 0.1s;
+}
+.info ul li a
+{
+	color: aqua;
+	font-size: 1.5em;
+	text-decoration: none;
+	transition: 0.2s;
+}
+.info ul li:hover
+{
+	background-color: #161616;
+}
+.info ul li a:hover
+{
+	text-decoration: underline;
+	color: rgb(255, 255, 255);
+}
 /*The footer
 .foot
 	a.finger
@@ -433,6 +405,9 @@ The class flow chart:
 	height: 50px;
 	align-items: center;
 	justify-content: space-around;
+	color: black;
+	background-color: rgba(0,255,127,0.3);
+	backdrop-filter: blur(7px);
 }
 .foot .something{
 	display: flex;
@@ -441,4 +416,11 @@ The class flow chart:
 	justify-content: space-evenly;
 	font-size: 1.5em;
 	width: 150px;
+}
+.foot a.finger i
+{
+	color: rgb(0, 0,0);
+	/* background-color: black; */
+	border-radius: 10%;
+	margin-bottom: 10px;
 }

@@ -1,60 +1,61 @@
 var deg_rot = 1;
-$('body').children().hide();
-$('.loading_container').show();
-$('.more-infor').hide();
-function LoadingConfig(){
-  var win_height = $(window).height();
-  var win_width = $(window).width();
-  $(window).resize(function(){
-    win_height = $(window).height();
-    win_width = $(window).width();
-  })
-  function createBlocks(){
-    var lc = document.querySelector('.loading_container');
-    for (var i = 0; i < 100; i++){
-      var block = document.createElement('div')
-      block.classList.add('lblock');
-      block.innerHTML = 'LOADING';
-      lc.appendChild(block);
-    }
-  }
-  createBlocks();
-  function animation(){
-    anime({
-      targets: '.lblock',
-      skewY: [0, 360],
-      skewX: [0, 360],
-      duration: 3000,
-      translateX: function(){
-        return anime.random(-(win_width/2), (win_width/2))
-      },
-    translateY: function(){
-      return anime.random(-(win_height/2), (win_height/2))
-    },
-    delay: anime.stagger(0),
-    complete: animation
-    })
-  }
-  animation();
-  setTimeout(function(){
-    anime({
-      targets: '.loading_container',
-      scale: [1, 0],
-      duration: 1000,
-      complete: function(){
-        $('.loading_container').remove();
-        $('body').children().fadeToggle(500);
-      }
-    })
-  }, 6000)
-}
-LoadingConfig();
+/* $('body').children().hide();
+// $('.loading_container').show();
+// $('.more-infor').hide();
+// function LoadingConfig(){
+//   var win_height = $(window).height();
+//   var win_width = $(window).width();
+//   $(window).resize(function(){
+//     win_height = $(window).height();
+//     win_width = $(window).width();
+//   })
+//   function createBlocks(){
+//     var lc = document.querySelector('.loading_container');
+//     for (var i = 0; i < 100; i++){
+//       var block = document.createElement('div')
+//       block.classList.add('lblock');
+//       block.innerHTML = 'LOADING';
+//       lc.appendChild(block);
+//     }
+//   }
+//   createBlocks();
+//   function animation(){
+//     anime({
+//       targets: '.lblock',
+//       skewY: [0, 360],
+//       skewX: [0, 360],
+//       duration: 3000,
+//       translateX: function(){
+//         return anime.random(-(win_width/2), (win_width/2))
+//       },
+//     translateY: function(){
+//       return anime.random(-(win_height/2), (win_height/2))
+//     },
+//     delay: anime.stagger(0),
+//     complete: animation
+//     })
+//   }
+//   animation();
+//   setTimeout(function(){
+//     anime({
+//       targets: '.loading_container',
+//       scale: [1, 0],
+//       duration: 1000,
+//       complete: function(){
+//         $('.loading_container').remove();
+//         $('body').children().fadeToggle(500);
+//       }
+//     })
+//   }, 6000)
+// }
+// // LoadingConfig(); */
 function checkSize() {
   var width = $(window).width();
   if (width > 600) {
     $('.nav-item').css('width', 'initial');
   }
-  else {
+  else
+  {
     $('.nav-item').css('width', '50px');
   }
 }
@@ -99,3 +100,19 @@ $(document).ready(function() {
   AnimateBlocks();
   CreateBlocks();
 })
+
+function portal(num)
+{
+  if (num === 1)
+  {
+    window.location = "https://telegram.me/venilabots1"
+  }
+  if (num === 2)
+  {
+    window.location = "https://telegram.me/springreenOT"
+  }
+  if (num === 3)
+  {
+    window.location = "https://telegram.me/Rohithaditya"
+  }
+}

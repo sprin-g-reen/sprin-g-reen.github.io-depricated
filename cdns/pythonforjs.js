@@ -100,19 +100,26 @@ function format(value, format_specs){
   if (typeof(text) !== 'string'){
     text = String(text);
   };
-  var splt_txt = text.split(" ");
-
-  var rslt_txt = '';
-  var num = 0;
-
-  for (var x = 0; x < splt_txt.length; x++){
-    var txt_to_add = splt_txt[x];
-    if (splt_txt[x] === '{}'){
-      txt_to_add = format_specs[num];
-      num ++;
-    };
-    rslt_txt = rslt_txt + String(txt_to_add) + ' ';
+  var fsnum = 0;
+  var rslt_txt = "";
+  for (var i = 0; i < text.length; i++)
+  {
+    var letter = text[i]
+    if (letter === '{' & i !== text.length-1)
+    {
+      if (text[i+1] === "}")
+      {
+        letter = text[i].replace('{', fs[fsnum])
+        fsnum += 1
+      }
+    }
+    if (letter === '}' & '{' === text[i-1] & i !== 0)
+    {
+      letter = ""
+    }
+    rslt_txt += letter
   }
+
   return rslt_txt;
 }
 

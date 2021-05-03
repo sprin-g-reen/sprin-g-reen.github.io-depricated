@@ -21,25 +21,25 @@
 A bot that can encode and decode the given text with a key.<br>
 Commands:
   - `/start`
-  - `/encode` or `/en`
-  - `/decode` or `/de`
+  - `/encrypt` or `/en`
+  - `/decrypt` or `/de`
   - `/crypto`
 Using the bot:
   - There are some basic commands that will carry the encryption and decryption
   - `/start`: Starts the bot.
-  - `/encode` or `/en`: Encodes the given text with a key.
+  - `/encrypt` or `/en`: Encodes the given text with a key.
     - Usage:
-    - `/encode | Your Key | Youtr Text`
+    - `/encrypt Your Key # Youtr Text`
     - Example:
-      - `/encode | Hello | What are you doing?`
+      - `/encrypt Hello # What are you doing?`
       - It returns:
         - `51809 25279 25279 32480 58252 33617 29069 26795 57115 35512 38923 30206 57115 26416 31722 36649 27553 27553 52567`
         - which is the encoded text.
-  - `/decode` or `/de`: Decodes the given encoded text with a key.
+  - `/decrypt` or `/de`: Decodes the given encoded text with a key.
     - Usage:
-    - `/decode | Your Key | Encoded text`
+    - `/decrypt Your Key # Encoded text`
     - Example:
-      -  `/decode | Bye | 45745 31722 24142 38544 62042 31722 36649 37786 54462 38544 35512 27174 36649 36649 29069 36649 38544 42334`
+      -  `/decrypt Bye # 45745 31722 24142 38544 62042 31722 36649 37786 54462 38544 35512 27174 36649 36649 29069 36649 38544 42334`
       -  It returns:
          -  `Meet you tomorrow!`
          -  Which is the decoded text
@@ -66,6 +66,15 @@ For simple-cryptography's online use see: [https://sprin-g-reen.github.io/simple
 ### Cryptography Bot V2
 ##### The next version of [Cryptography V1 Bot](https://telegram.me/simple-cryptography) with a new [Inline Feature]()
 
+Commands:
+  - `/start`
+  - `/help`
+  - `/decrypt` or `/de`
+
+Usage:
+  - `/start`: Starts the bot
+  - `/help` : Get help for the usage of the bot.
+  - `/de`   : Same as the one of [Cryptography V1 Bot](#cryptography-bot)
 Inline Usage:
   - Just Type `@scrptogbot` then your `key` and the `text` with `#` in between to seperate the _key_ and _text_
     - The text area will be: `@scrptogbot Key # Text`
@@ -79,16 +88,16 @@ Inline Usage:
 ##### A simple poll bot that can create simple polls in groups and channels.
 
 Commands:
-  - /help
-  - /alive
-  - /poll
+  - `/help`
+  - `/alive`
+  - `/poll`
 
 Functions:
-  - /help:
+  - `/help`:
     See the Help Text
-  - /alive:
+  - `/alive`:
     Check if the bot is running or not
-  - /poll:
+  - `/poll`:
     Create polls.
   - How To Create Polls:
     - Use:

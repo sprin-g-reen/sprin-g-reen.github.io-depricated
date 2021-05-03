@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Greetings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <div class="container">
+      Birthday Celebrater's:
+      <div>Name <input type="text" name="name" class="name" placeholder="Birthday Celebrater's Name" required/></div>
+      <div>Date Of Birth <input type="date" name="date" class="date" required/></div>
+      <div><input type="checkbox" placeholder="Use Custom Images" class="custom">Use Custom Images</input></div>
+      <div><input type="checkbox" placeholder="Use Your Images" class="user"/>Use Your Images</input></div>
+      <div class="links">
+        <div>Image URL <input type="url" name="url1" id="l1" required/></div>
+      </div>
+      <div><input type="button" value="Generate Link"><input type="button" value="View Page"></div>
+      <div class="copy">
+        <input type="url" id="genlink" value="Some Link" disabled/><input type="button" value="Copy" onclick="copyToClipboard($('#genlink').val())">
+      </div>
+    </div>
+  </div>
+  <div class="party">
+    <div class="decoration1"></div>
+    <div class="decoration2"></div>
+    <div>
+      <div class="hb">HAPPY BIRTHDAY</div>
+      <div class="cname">Name: </div>
+    </div>
+    <div class="customimg"></div>
+    <div class="cake"></div>
+  </div>
+</body>
+<script src="/cdns/pythonforjs.js"></script>
+<script src="/HTML_ASSETS/jquery.js"></script>
+<script src="/HTML_ASSETS/anime.js"></script>
+<script src="index.js"></script>
+</html>
