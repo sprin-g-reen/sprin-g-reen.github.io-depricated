@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <div class="headder" id="docs">
+    <h1><img src="../logo.ico" width="61px" alt="SPRINGREEN LOGO" />SPRINGREEN</h1>
+    <h4>DOCS</h4>
+  </div>
+  <div class="nav">
+    <a href="/" class="link">HOME</a>
+    <a href="" class="link">DOCS</a>
+    <a href="https://github.com/sprin-g-reen" class="link">GITHUB</a>
+    <a href="https://telegram.me/venilabots" class="link">TELEGRAM</a>
+    <div class="link" id="naver"></div>
+  </div>
+  <div class="wrapper">
+    <div class="table">
+      <ul>
+        <li><a href="#docs">DOCS</a></li>
+        <li><a href="#cryptography-bot">Cryptography Bot V1</a></li>
+        <li><a href="#cryptography-bot-V2">Cryptography Bot V2</a></li>
+        <li><a href="#poll-bot">Poll Bot</a></li>
+        <li><a href="#For-more-informations-visit:">More Info</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <h2 id="cryptography-bot">Cryptography Bot</h2>
+      <h4 id="a-product-of-simple-cryptography-https-github-com-parvat-web-dev-simple-cryptography-">A product of <a
+          href="https://github.com/Parvat-web-dev/Simple-Cryptography">SIMPLE CRYPTOGRAPHY</a></h4>
+      <p>A bot that can encode and decode the given text with a key.<br>
+        Commands:</p>
+      <ul>
+        <li><code>/start</code></li>
+        <li><code>/encrypt</code> or <code>/en</code></li>
+        <li><code>/decrypt</code> or <code>/de</code></li>
+        <li><code>/crypto</code>
+          Using the bot:</li>
+        <li>There are some basic commands that will carry the encryption and decryption</li>
+        <li><code>/start</code>: Starts the bot.</li>
+        <li><code>/encrypt</code> or <code>/en</code>: Encodes the given text with a key.<ul>
+            <li>Usage:</li>
+            <li><code>/encrypt Your Key # Youtr Text</code></li>
+            <li>Example:<ul>
+                <li><code>/encrypt Hello # What are you doing?</code></li>
+                <li>It returns:<ul>
+                    <li>
+                      <code>51809 25279 25279 32480 58252 33617 29069 26795 57115 35512 38923 30206 57115 26416 31722 36649 27553 27553 52567</code>
+                    </li>
+                    <li>which is the encoded text.</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><code>/decrypt</code> or <code>/de</code>: Decodes the given encoded text with a key.<ul>
+            <li>Usage:</li>
+            <li><code>/decrypt Your Key # Encoded text</code></li>
+            <li>Example:<ul>
+                <li>
+                  <code>/decrypt Bye # 45745 31722 24142 38544 62042 31722 36649 37786 54462 38544 35512 27174 36649 36649 29069 36649 38544 42334</code>
+                </li>
+                <li>It returns:<ul>
+                    <li><code>Meet you tomorrow!</code></li>
+                    <li>Which is the decoded text</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><code>/crypto</code>: Encodes or decodes a text file(<em>with <code>*.txt</code> extention</em>).<ul>
+            <li>Usage:</li>
+            <li><code>TO ENCODE a file</code></li>
+            <li><code>Send a file to the bot.</code></li>
+            <li><code>The send reply to the file with text:</code>
+              <ul>
+                <li><code>/crypto Your Key</code></li>
+                <li><code>It will return a</code><em>*.txt.cet</em> <code>file which means it is</code><em>cryptography
+                    encoded text</em><code>file</code></li>
+              </ul>
+            </li>
+            <li><code>TO DECODE a file</code></li>
+            <li><code>Send a file to the bot.</code></li>
+            <li><code>The send reply to the file with text:</code>
+              <ul>
+                <li><code>/crypto Your Key</code></li>
+                <li><code>It will return a</code><em>*.txt</em>
+                  <code>file. Note: the file you send must be a</code><em>*.txt.cet</em> <code>type file.</code></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p>For simple-cryptography&#39;s online use see: <a
+          href="https://sprin-g-reen.github.io/simple%20cryptography">https://sprin-g-reen.github.io/simple%20cryptography/</a>
+      </p>
+      <hr>
+
+
+      <h2 id="cryptography-bot-v2">Cryptography Bot V2</h2>
+      <h5 id="the-next-version-of-cryptography-v1-bot-https-telegram-me-simple-cryptography-with-a-new-inline-feature-">
+        The next version of <a href="https://telegram.me/simple-cryptography">Cryptography V1 Bot</a> with a new <a
+          href="">Inline Feature</a></h5>
+      <p>Commands:</p>
+      <ul>
+        <li><code>/start</code></li>
+        <li><code>/help</code></li>
+        <li><code>/decrypt</code> or <code>/de</code></li>
+      </ul>
+      <p>Usage:</p>
+      <ul>
+        <li><code>/start</code>: Starts the bot</li>
+        <li><code>/help</code> : Get help for the usage of the bot.</li>
+        <li><code>/de</code> : Same as the one of <a href="#cryptography-bot">Cryptography V1 Bot</a>
+          Inline Usage:</li>
+        <li>Just Type <code>@scrptogbot</code> then your <code>key</code> and the <code>text</code> with <code>#</code>
+          in between to seperate the <em>key</em> and <em>text</em>
+          <ul>
+            <li>The text area will be: <code>@scrptogbot Key # Text</code></li>
+            <li>The first look of <a href="https://telegram.me/scrptogbot">Cryptography V2 Bot</a>:</li>
+          </ul>
+        </li>
+      </ul>
+      <li> <img src="../images/simple-cryptography-first-look.png"></img></li>
+      </code></pre>
+      <h2 id="poll-bot">Poll Bot</h2>
+      <h5 id="a-simple-poll-bot-that-can-create-simple-polls-in-groups-and-channels-">A simple poll bot that can create
+        simple polls in groups and channels.</h5>
+      <p>Commands:</p>
+      <ul>
+        <li><code>/help</code></li>
+        <li><code>/alive</code></li>
+        <li><code>/poll</code></li>
+      </ul>
+      <p>Functions:</p>
+      <ul>
+        <li><code>/help</code>:
+          See the Help Text</li>
+        <li><code>/alive</code>:
+          Check if the bot is running or not</li>
+        <li><code>/poll</code>:
+          Create polls.</li>
+        <li>How To Create Polls:<ul>
+            <li>Use:</li>
+            <li><code>/poll | Your Question | Option1, Option2, Option3, more_option | **kwargs</code></li>
+          </ul>
+        </li>
+      </ul>
+      <p>You can add As may options as you want. (minimum 1)<br>
+        What is <code>**kwargs?</code><br>
+        **kwargs are the optional commands, that you can pass when necessary!
+        Those are:</p>
+      <ul>
+        <li><code>multi_answer = True/False</code>
+          <ul>
+            <li>This enables or disables The multiple answer mode. By default It is False.<ul>
+                <li>example:
+                  <pre><code>`/poll | <span class="hljs-type">This</span> is my question | <span class="hljs-type">Ans1</span>, Ans2 | <span class="hljs-type">multi_answer</span> = True | <span class="hljs-type">op</span> = seconds`&lt;br&gt;
+      </code></pre>This tells how many seconds will the poll will last.
+                  It might be &#39;op&#39; or &#39;open_period&#39;<ul>
+                    <li>example:
+                      <code>/poll | This is my question | Ans1, Ans2 | op = 60</code><br>
+                      Now thw poll will last for 60 seconds.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><code>dn = True/False</code>
+          <ul>
+            <li>This tells that showld the poll be notidied in the notifications of the group members. By Default it is
+              True. It might be &#39;dn&#39; or &#39;disable_notification&#39;.<ul>
+                <li>example:
+                  <pre><code>`/poll | This is my question | Ans1, Ans2 | dn = <span class="hljs-literal">False</span>`
+      </code></pre>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p>Did you know, you can use multiple optional commands or dont use it:
+        Example:</p>
+      <ul>
+        <li><code>/poll | Hi there | Hello, Good bye</code></li>
+        <li><code>/poll | This will close in 10s | Nice, Bad | op = 10</code></li>
+        <li><code>/poll | Hello | Hi, Bye, Hi dev, Bye human | ma = True open_period = 50</code></li>
+      </ul>
+      <p>Note:</p>
+      <ul>
+        <li>Use comma(<strong><code>&#39;,&#39;</code></strong>) to split the <em>options</em>.</li>
+        <li>Every part is split by <code>&#39;|&#39;</code>.</li>
+        <li>To use &#39;,&#39; in option use: <code>&#39;&lt;.&gt;&#39;</code></li>
+      </ul>
+      <h2 id="for-more-informations-visit-">For more informations visit:</h2>
+      <ul>
+        <li>
+          <p>Official Site:</p>
+          <ul>
+            <li><a href="https://sprin-g-reen.github.io/">https://sprin-g-reen.github.io/</a></li>
+          </ul>
+          <p>Telegram:</p>
+        </li>
+        <li><a href="https://telegram.me/venilabots">SPRINGREEN BOTS</a></li>
+        <li>
+          <p><a href="https://telegram.me/venilabots">SPRINGREEN DISCUSSION</a></p>
+          <p>Credits:</p>
+        </li>
+        <li><a href="https://telegram.me/Parvat_R">@Parvat_R</a></li>
+        <li><a href="https://telegram.me/Rohithaditya">@Rohithaditya</a></li>
+      </ul>
+      <p>Created with:</p>
+      <ul>
+        <li><a href="https://python.org/">python</a></li>
+        <li><a href="https://pypi.org/project/pyTelegramBotAPI/">pyTelegramBotAPI</a></li>
+      </ul>
+
+
+    </div>
+  </div>
+
+</body>
+<script src="/HTML_ASSETS/jquery.js"></script>
+<script>
+
+  $(document).ready(function () {
+    var naver = document.getElementById('naver');
+    document.addEventListener('mousemove', e => {
+      if (e.target.className === "link") {
+        var nav_width = document.getElementsByClassName('nav')[0].offsetWidth / 1.336;
+        var offsetY = e.target.offsetLeft;
+        var right = nav_width - offsetY;
+        naver.style.right = right + "px";
+      }
+      else {
+        naver.style.right = "calc((100% / 4) * 2)";
+      }
+    })
+  })
+
+</script>
+
+</html>

@@ -1,119 +1,154 @@
-
-@font-face 
-{
-  font-family: DejaVuSansMono;
-  src: url(../HTML_ASSETS/text_fonts/dejavusansmono_book_macroman/DejaVuSansMono-webfont.woff)
-}
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  font-family: DejaVuSansMono;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
-  color: black;
-  font-size: 1.2em;
-  background-color:white;
-}
-a
+body
 {
-  color: rgb(0, 156, 78);
-}
-
-/*The headder
-.head
-  i .fa .fa-book
-  h1
-  h6
-    a
-*/
-.head {
   display: flex;
-  align-items: center;
-  justify-self: space-around;
-  border: 1px solid black;
-  background-color: blue;
-  color: white;
+  flex-direction: column;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #f0f0f0;
 }
-.head i{
-  min-width: 100px;
-  width: 30vw;
-  font-size: 5em;
-  text-align: center;
-  color: springgreen;
+code
+{
+  background-color: rgba(200,200,200,0.7);
+  border-radius: 7px;
+  padding: 0px 7px;
 }
-.head h1{
-  align-self: left;
-  justify-self: flex-start;
-  border-left: 2px solid black;
-  height: 100px;
-  padding-left: 5%;
-  font-size: 3em;
-  text-align: center;
+em
+{
+  font-style: oblique;
+}
+.headder
+{
+  width: 100%;
   display: flex;
-  text-transform: capitalize;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  height: 120px;
+  background-color: #235796;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 1500;
 }
-.head h6{
+.headder h1
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 2.5em;
+}
+.nav
+{
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.1em;
+  background-color: #ffcc00;
+  height: 43px;
+}
+.nav
+.link
+{
+  width: calc(100% / 4);
+  height: 43px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #0000cc;
+  font-weight: bold;
+  border-radius: 20px;
+  z-index: 2;
+}
+/* .nav
+.link:hover
+{
+  color: white;
+  background-color: #10101079; 
+} */
+.nav
+#naver
+{
   position: absolute;
-  top: 80px;
-  right: 0;
+  right: calc((100% / 4) * 2);
+  z-index: 1;
+  background-color: white;
+  transition: 0.4s;
 }
-.head h6 a {
-  color: springgreen;
-  font-size: 1.4em;
-}
-/*
-Default:
-.content
-  main .cb
-    header
-      article
-        a
-Seperate:
-.content
-  .cb
-  .pcb
-  .pb
-  .pf
-  .sb
-  .si
-  .sc
-  .wb
-  .yb
-*/
-.content
-{ 
-  display: flex;
-  align-items: left;
-  justify-content: space-around;
-  flex-direction: column;
-  min-height: 100vh;
-  width: 90%;
-  margin: auto;
-  padding: 2%;
-  color: white;
-  background-color: black;
-  border-left: 2px solid black;
-  overflow: visible;
-}
-.content main
+@media only screen and (max-width: 525px) 
 {
+  .nav
+  {
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+  }
+  .nav
+  .link:hover
+  {
+    background-color: white;
+  }
+  #naver
+  {
+    display: none;
+  }
+}
+.wrapper
+{
+  width: 100%;
+  background-color: rgba(240,240,250);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  min-height: 100px;
-  min-width: 200px;
-  width: 90%;
-  padding: 4%;
 }
-.cotent main header{
-  position: relative;
-  font-size: 1.63em;
-  text-align: center;
+.table
+{
+  position: sticky;
+  top: 43px;
+  width: 340px;
+  height: 200px;
+  font-size: 1.2em;
+  text-align: right;
+  align-self: flex-start;
+  padding-right: 20px;
 }
-.content main article{
+.table ul li
+{
+  list-style-type: none;
+  border-bottom: 1px solid black;
+}
+.table ul li a
+{
+  text-decoration: none;
+}
+.container
+{
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 0px 7px;
+  width: 80%;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+@media only screen and (max-width: 650px)
+{
+  .table
+  {
+    display: none;
+  }
+  .container
+  {
+    width: 97%;
+  }
 }
